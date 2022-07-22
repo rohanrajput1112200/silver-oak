@@ -24,6 +24,43 @@
         {
             document.bgColor="orange"
                 }
+                function add()
+                {
+                    const num1=80;
+                    const num2=20;
+
+                    const sum=num1+num2;
+                    alert(sum);
+                    txtans.value=sum;
+                }
+                function div()
+                {
+                    const num1=80;
+                    const num2=20;
+
+                    const sum=num1-num2;
+                    alert(sum);
+                    txtans.value=sum;
+                }
+                function multi()
+                {
+                    const num1=80;
+                    const num2=20;
+
+                    const sum=num1*num2;
+                    alert(sum);
+                    txtans.value=sum;
+                }
+                function sub()
+                {
+                    const num1=80;
+                    const num2=20;
+
+                    const sum=num1/num2;
+                    alert(sum);
+                    txtans.value=sum;
+                }
+                
                 
         </script>
     <body>
@@ -35,13 +72,20 @@
             
             <input type="button" onclick="orangetheme()" width=100px  hight="100px" style="background-color: orange;";/>
 
-            
-            
-            
-            
-            </div>
-        
-        
+
+        <div>
+            <input type="button"   id="add" onclick="add()" value="+"  style="background-color: red;"/> 
+        </div>
+        <div>
+            <input type="button"   id="div" onclick="div()" value="-"  style="background-color: red;"/> 
+        </div>
+        <div>
+            <input type="button"   id="multi" onclick="multi()" value="*"  style="background-color: red;"/> 
+        </div>
+
+        <div>
+            <input type="button"   id="sub" onclick="sub()" value="/"  style="background-color: red;"/> 
+        </div>
         
         
         </body>
