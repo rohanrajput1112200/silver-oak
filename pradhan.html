@@ -1,92 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            <style>
-        
-            </style>
-        </title>
+<html lang="en">
+<head>
+    <title>java</title>
+</head>
+<script type="text/javascript">
+    function add()
+    {
+        const a=parseInt(textA.value);
+        const b=parseInt(textB.value);
+       
+        textAns.value=a+b;
+        alert(textAns.value);
+    }
+    function div()
+    {
+        const a=parseInt(textA.value);
+        const b=parseInt(textB.value);
 
-    </head>
-    <script>
+        textAns.value=a-b;
+        alert(textAns.value);
 
-        function redtheme()
-        {
-            document.bgColor="red"
-                }
-                
-        function bluetheme()
-        {
-            document.bgColor="blue"
-                }
-                
-        function orangetheme()
-        {
-            document.bgColor="orange"
-                }
-                function add()
-                {
-                    const num1=80;
-                    const num2=20;
-
-                    const sum=num1+num2;
-                    alert(sum);
-                    txtans.value=sum;
-                }
-                function div()
-                {
-                    const num1=80;
-                    const num2=20;
-
-                    const sum=num1-num2;
-                    alert(sum);
-                    txtans.value=sum;
-                }
-                function multi()
-                {
-                    const num1=80;
-                    const num2=20;
-
-                    const sum=num1*num2;
-                    alert(sum);
-                    txtans.value=sum;
-                }
-                function sub()
-                {
-                    const num1=80;
-                    const num2=20;
-
-                    const sum=num1/num2;
-                    alert(sum);
-                    txtans.value=sum;
-                }
-                
-                
-        </script>
-    <body>
-        <div>
+     }
             
-            <input type="button" onclick="redtheme()" width=100px  hight="100px" style="background-color: red;";/>
-            
-            <input type="button" onclick="bluetheme()" width=100px  hight="100px" style="background-color: blue;";/>
-            
-            <input type="button" onclick="orangetheme()" width=100px  hight="100px" style="background-color: orange;";/>
+     function mul()
+    {
+        const a=parseInt(textA.value);
+        const b=parseInt(textB.value);
+        textAns.value=a*b;
+        alert(textAns.value);
+    }
+    function sub()
+    {
+        const a=parseInt(textA.value);
+        const b=parseInt(textB.value);
+
+        textAns.value=a/b;
+        alert(textAns.value);
+
+    }
+        function clr()
+    {
+        const a=parseInt(textA.value=0);
+        const b=parseInt(textB.value=0);
+
+        textAns.value=0;
+        alert(textAns.value);
 
 
-        <div>
-            <input type="button"   id="add" onclick="add()" value="+"  style="background-color: red;"/> 
-        </div>
-        <div>
-            <input type="button"   id="div" onclick="div()" value="-"  style="background-color: red;"/> 
-        </div>
-        <div>
-            <input type="button"   id="multi" onclick="multi()" value="*"  style="background-color: red;"/> 
-        </div>
+    }
+    function redtheme()
+    {
+        document.bgColor="red"
+    }
+    function bluetheme()
+    {
+        document.bgColor="blue"
+    }
 
-        <div>
-            <input type="button"   id="sub" onclick="sub()" value="/"  style="background-color: red;"/> 
-        </div>
+
+
+
+</script>
+
+<body>
+    <div>
+        <aling-center>
+        enter value of a=<input type="text" value="0" width="200px" id="textA"/><br>
+        enter value of b=<input type="text" value="0" width="200px" id="textB"/><br>
         
-        
-        </body>
+
+
+        ans:<input type="text" value="0" width="200px" id="textAns"/><br>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</aling-center><input type="button" id="btadd" onclick="add()" value="+" style="background-color: red;">
+        <input type="button" id="btdiv" onclick="div()" value="-" style="background-color: red;">
+        <input type="button" id="btmul" onclick="mul()" value="*" style="background-color: red;">
+        <input type="button" id="btsub" onclick="sub()" value="/"style="background-color: red;">
+        <input type="button" id="btclr" onclick="clr()" value="C"style="background-color: red;">
+    
+
+
+
+    </div>
+    <div>
+<input type="button" onclick="redtheme()" style="background-color: red;"/>
+<input type="button" onclick="bluetheme()" style="background-color: blue;"/>
+
+    </div>
+</body>
 </html>
