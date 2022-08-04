@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+                
+            });
+        });
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+                
+               
+              
+            });
+        });
+        $(document).ready(function(){
+            $("#b3").click(function(){
+                $("#slide").animate({left: '250px'.});
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <button id="b1">click to fade in boxe</button><br></br>
+    <button id="b2">click to fade in boxe</button><br></br>
+    <button id="b3">click to fade in boxe</button><br></br>
+    <div id="div1" style="width: 100px; height:100px;display:none;background-color:rgb(255, 102, 0)"></div><br>
+    <div id="div2" style="width: 100px; height:100px;display:none;background-color:rgb(47, 0, 255)"></div><br>
+    <div  id="slide"style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    <div id="div3" style="width: 100px; height:100px;display:none;background-color:rgb(48, 218, 32)"></div>
+</body>
+</html>
